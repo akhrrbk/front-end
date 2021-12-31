@@ -52,6 +52,13 @@
 // })
 
 
-const add = (x, y) => {
-    return x + y;
-}
+// arrow functions
+// const add = (x, y) => {
+//     return x + y;
+// }
+
+// const greet = (exp) => {
+//     return `Hey ${exp}!`;
+// } 
+
+
