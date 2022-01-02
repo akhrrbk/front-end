@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+        <img src = "https://images.unsplash.com/photo-1611251135345-18c56206b863?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" width="30%">
+        <h1><span id="player1span">0</span> to <span id="player2span">0</span></h1>
+        <select name="select" id="select" class="select">
+            <option value="3">3</option>
+            <option value="5" selected='selected'>5</option>
+            <option value="7">7</option>
+            <option value="9">9</option>
+            <option value="11">11</option>
+        </select>
+        <button id="player1button" class="button is-success">+1 Player One</button>
+        <button id="player2button" class="button is-info">+1 Player Two</button>
+        <button id="reset" class="button is-danger">Reset</button>
+
+</body>
+<script src="pingpong.js"></script>
+</html>
