@@ -14,7 +14,10 @@ document.querySelector('h1').onclick = () => {
     console.log('you clicked h1')
 }
 
+// const button2 = document.querySelector('#button2');
+// button2.addEventListener('dblclick', function(){
+//     alert("you double clicked button2")
+// })
+
 const button2 = document.querySelector('#button2');
-button2.addEventListener('dblclick', function(){
-    alert("you double clicked button2")
-})
+button2.addEventListener('dblclick', scream)
