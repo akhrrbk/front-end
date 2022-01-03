@@ -34,10 +34,23 @@ const datamining = async () => {
 
         if(res.data.length !== 0){
             for(let i = 0; i < res.data.length; i++){
+                
                 // console.log(res.data[i].show.name)
                 const newLi = document.createElement('li');
-                newLi.append(res.data[i].show.name);
+                newLi.append(`${res.data[i].show.name} // `);
+                
+                // I wanna add a link attribute to li here
+                if(res.data[i].show.image !== null){
+                    // console.log(`image nummber ${i+1}: ${res.data[i].show.image.medium}`)
+                    const alink = document.createElement('a');
+                    alink.href = res.data[i].show.image.medium;
+                    // alink.append(res.data[i].show.image.medium);
+                    alink.innerHTML = 'link here'
+                    alink.style.color = 'red';
+                    newLi.appendChild(alink)
+                }
                 list.append(newLi) 
+                
                 if(res.data[i].show.image !== null){
                     console.log(`image nummber ${i+1}: ${res.data[i].show.image.medium}`)
                 }
